@@ -5,10 +5,10 @@ from bs4 import BeautifulSoup
 # Using WEBSHARE.IO proxy for this project
 # proxy_credential = http://{PROXY_USERNAME}:{PROXY_PASSWORD}@{PROXY_ADDRESS}:{PROXY_PORT}
 
-proxies = {
-    'http' : "http://",
-    'https' : "http://"
-}
+# proxies = {
+#     'http' : "http://",
+#     'https' : "http://"
+# }
 
 # response = requests.get('https://ipinfo.io/json', proxies=proxies)
 # print(response.json())
@@ -16,8 +16,8 @@ reviewList = []
 # Create soup - get all content from website using proxy
 def create_soup(reviewUrl):
     proxies = {
-    'http' : "http://ucdcfrki-rotate:xrx5i8i3yztw@p.webshare.io:80",
-    'https' : "http://ucdcfrki-rotate:xrx5i8i3yztw@p.webshare.io:80"
+    'http' : "",
+    'https' : ""
     }
     # response = requests.get(reviewUrl)
     response = requests.get(reviewUrl, proxies=proxies)
